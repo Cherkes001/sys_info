@@ -15,33 +15,95 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
 
     <title>Dashboard</title>
   </head>
   <body onload="getInfo()">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="index.html">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" href="#">Dashboard <span class="sr-only">(current)</span></a>
+          <a class="nav-link active" href="#"
+            >Dashboard <span class="sr-only">(current)</span></a
+          >
           <a class="nav-link" href="./src/html/netwrok.html">Network</a>
           <a class="nav-link" href="#">Disk</a>
         </div>
       </div>
     </nav>
 
-    <div id="root"></div>
+    <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="./src/icons/006-cpu.svg" class="p-2" alt="..." width="128px" />
+          <div class="card-body">
+            <h5 class="card-title">CPU</h5>
+            <p class="card-text">CPU: <text id="cpu"></text></p>
+            <p class="card-text">
+              Current frequency: <text id="current"></text> gHz
+            </p>
+            <p class="card-text">Max frequency: <text id="max"></text> gHz</p>
+            <p class="card-text">Min frequency: <text id="min"></text> gHz</p>
+            <p class="card-text">
+              Cores: <text id="cores"></text> (Physical cores:
+              <text id="physical"></text>)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="./src/icons/026-ram.svg" class="p-2" alt="..." width="128px" />
+          <div class="card-body">
+            <h5 class="card-title">RAM Info</h5>
+            <p class="card-text">Total RAM: <text id="total"></text> MB</p>
+            <p class="card-text">Free RAM: <text id="free"></text> MB</p>
+            <p class="card-text">Used RAM: <text id="used"></text> MB</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">CPU: <text id="cpu"></text></li>
-      <li class="list-group-item">Current frequency: <text id="current"></text> gHz</li>
-      <li class="list-group-item">Max frequency: <text id="max"></text> gHz</li>
-      <li class="list-group-item">Min frequency: <text id="min"></text> gHz</li>
-      <li class="list-group-item">Cores: <text id="cores"></text> (Physical cores: <text id="physical"></text>)</li>
-    </ul>
     <!-- Optional JavaScript -->
     <script src="./scripts.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

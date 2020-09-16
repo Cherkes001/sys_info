@@ -14,7 +14,7 @@ router.get('/gpu', async (req, res) => {
 router.get('/temp', async (req, res) => {
   return infoController.getCpuTemp(req, res);
 });
-router.get('/mem', async (req, res) => {
+router.get('/ram', async (req, res) => {
   return infoController.getMemInfo(req, res);
 });
 router.get('/', async (req, res) => {
