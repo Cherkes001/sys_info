@@ -17,5 +17,8 @@ router.get('/temp', async (req, res) => {
 router.get('/mem', async (req, res) => {
   return infoController.getMemInfo(req, res);
 });
+router.get('/', async (req, res) => {
+  return infoController.getTest(req, res);
+});
 
 module.exports = router;

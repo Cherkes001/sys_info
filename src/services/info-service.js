@@ -36,6 +36,8 @@ class InfoService {
   }
   async getGraphicsInfo() {
     const data = await si.graphics();
+    const { controllers, displays } = data;
+    const result = {};
     return data;
   }
   async getCpuTemp() {
@@ -54,6 +56,11 @@ class InfoService {
     };
 
     return result;
+  }
+
+  async getTest() {
+    const data = await si.inetLatency();
+    return data;
   }
 }
 

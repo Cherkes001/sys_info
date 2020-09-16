@@ -49,6 +49,15 @@ class InfoController {
       data,
     });
   }
+
+  async getTest(req, res) {
+    const data = await this.infoService.getTest();
+
+    res.send({
+      success: true,
+      data,
+    });
+  }
 }
 
 module.exports = InfoController;
