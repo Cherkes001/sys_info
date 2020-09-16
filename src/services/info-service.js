@@ -1,5 +1,4 @@
 const si = require('systeminformation');
-const { response } = require('express');
 class InfoService {
   constructor() {}
 

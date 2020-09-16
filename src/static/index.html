@@ -24,7 +24,7 @@
   </head>
   <body onload="getInfo()">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Navbar</a>
+      <a class="navbar-brand" href="/">Navbar</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -50,7 +50,33 @@
     <div class="row row-cols-1 row-cols-md-3">
       <div class="col mb-4">
         <div class="card h-100">
-          <img src="./src/icons/006-cpu.svg" class="p-2" alt="..." width="128px" />
+          <img
+            src="./src/icons/001-chipset.svg"
+            class="p-2"
+            alt="..."
+            width="128px"
+          />
+          <div class="card-body">
+            <h5 class="card-title">OS Info</h5>
+            <p class="card-text">Hostname: <text id="hostname"></text></p>
+            <p class="card-text">Platform: <text id="platform"></text></p>
+            <p class="card-text">Arch: <text id="arch"></text></p>
+            <p class="card-text">Distro: <text id="distro"></text></p>
+            <p class="card-text">Codename: <text id="codename"></text></p>
+            <p class="card-text">Release: <text id="release"></text></p>
+            <p class="card-text">Kernel version: <text id="kernel"></text></p>
+            <p class="card-text">UEFI: <text id="uefi"></text></p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card h-100">
+          <img
+            src="./src/icons/006-cpu.svg"
+            class="p-2"
+            alt="..."
+            width="128px"
+          />
           <div class="card-body">
             <h5 class="card-title">CPU</h5>
             <p class="card-text">CPU: <text id="cpu"></text></p>
@@ -68,7 +94,12 @@
       </div>
       <div class="col mb-4">
         <div class="card h-100">
-          <img src="./src/icons/026-ram.svg" class="p-2" alt="..." width="128px" />
+          <img
+            src="./src/icons/026-ram.svg"
+            class="p-2"
+            alt="..."
+            width="128px"
+          />
           <div class="card-body">
             <h5 class="card-title">RAM Info</h5>
             <p class="card-text">Total RAM: <text id="total"></text> MB</p>
