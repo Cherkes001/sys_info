@@ -11,6 +11,6 @@ router.use((req, res, next) => {
 });
 
 router.use('/api', require('./api/index.js'));
-router.use('/static', express.static('src/static'));
+router.use('/', express.static('src/static'));
 
 module.exports = router;

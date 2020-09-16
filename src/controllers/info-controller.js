@@ -5,8 +5,44 @@ class InfoController {
     this.infoService = new InfoService();
   }
 
-  async getHostname(req, res) {
-    const data = await this.infoService.getHostname();
+  async getOSInfo(req, res) {
+    const data = await this.infoService.getOSInfo();
+
+    res.send({
+      success: true,
+      data,
+    });
+  }
+
+  async getCpuInfo(req, res) {
+    const data = await this.infoService.getCpuInfo();
+
+    res.send({
+      success: true,
+      data,
+    });
+  }
+
+  async getGraphicsInfo(req, res) {
+    const data = await this.infoService.getGraphicsInfo();
+
+    res.send({
+      success: true,
+      data,
+    });
+  }
+
+  async getCpuTemp(req, res) {
+    const data = await this.infoService.getCpuTemp();
+
+    res.send({
+      success: true,
+      data,
+    });
+  }
+
+  async getMemInfo(req, res) {
+    const data = await this.infoService.getMemInfo();
 
     res.send({
       success: true,
