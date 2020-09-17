@@ -37,6 +37,7 @@ class InfoService {
     const data = await si.graphics();
     const { controllers, displays } = data;
     const result = {};
+    console.log(controllers);
     return data;
   }
   async getCpuTemp() {

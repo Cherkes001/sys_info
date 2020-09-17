@@ -3,8 +3,8 @@ class NetworkService {
   constructor() {}
 
   async getIp() {
-    const data = si.networkInterfaces();
-    return data;
+    const data = await si.networkInterfaces();
+    return { ...data };
   }
 }
 

@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production --watch"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,12 @@
   },
   "homepage": "https://github.com/Cherkes001/sys_info#readme",
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
